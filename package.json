@@ -1,8 +1,8 @@
 {
-  "title": "Landing Page",
-  "name": "startbootstrap-landing-page",
-  "version": "4.0.0-beta.2",
-  "description": "An HTML landing page template built with Bootstrap",
+  "title": "D-Risk Technology Private Limited Landing Page",
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "An HTML landing page for D-Risk Technology Private Limited based on the template built with Bootstrap",
   "keywords": [
     "css",
     "sass",
@@ -11,28 +11,30 @@
     "theme",
     "template"
   ],
-  "homepage": "https://startbootstrap.com/template-overviews/landing-page",
+  "homepage": "https://github.com/d-risk/landing-page",
   "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page/issues",
-    "email": "feedback@startbootstrap.com"
+    "url": "https://github.com/d-risk/landing-page/issues",
+    "email": "feedback@d-risk.tech"
   },
   "license": "MIT",
-  "author": "Start Bootstrap",
+  "author": "D-Risk Technology Private Limited",
   "contributors": [
-    "David Miller (http://davidmiller.io/)"
+    "David Miller (http://davidmiller.io/)",
+    "Christopher Zhong (https://github.com/ChrisZhong/)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page.git"
+    "url": "https://github.com/d-risk/landing-page.git"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "font-awesome": "4.7.0",
-    "http-server": "^0.10.0",
-    "jquery": "^3.2.1"
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   },
   "devDependencies": {
     "browser-sync": "2.18.13",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "minimatch": "^3.0.4"
   }
 }
