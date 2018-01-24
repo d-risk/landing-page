@@ -1,32 +1,33 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
-// Copy vendor files from /node_modules into /vendor
 // NOTE: requires `npm install` before running!
+
+// Copy vendor files from /node_modules into /vendor
 gulp.task('vendor', function () {
+    // Bootstrap
     gulp.src([
         './node_modules/bootstrap/dist/**/*',
-        '!**/npm.js',
-        '!**/bootstrap-theme.*',
-        '!**/*.map'
+        '!./node_modules/bootstrap/dist/**/*.map'
     ])
         .pipe(gulp.dest('./vendor/bootstrap'));
 
+    // Font Awesome
     gulp.src([
-        './node_modules/jquery/dist/jquery.js',
-        './node_modules/jquery/dist/jquery.min.js'
-    ])
-        .pipe(gulp.dest('./vendor/jquery'));
-
-    gulp.src([
-        './node_modules/font-awesome/**',
+        './node_modules/font-awesome/**/*',
         '!./node_modules/font-awesome/**/*.map',
-        '!./node_modules/font-awesome/.npmignore',
-        '!./node_modules/font-awesome/*.txt',
-        '!./node_modules/font-awesome/*.md',
-        '!./node_modules/font-awesome/*.json'
+        '!./node_modules/font-awesome/**/*.txt',
+        '!./node_modules/font-awesome/**/*.json',
+        '!./node_modules/font-awesome/**/*.md'
     ])
         .pipe(gulp.dest('./vendor/font-awesome'))
+
+    // jQuery
+    gulp.src([
+        './node_modules/jquery/dist/**/*',
+        '!./node_modules/jquery/dist/**/*.map'
+    ])
+        .pipe(gulp.dest('./vendor/jquery'));
 });
 
 // Default task
