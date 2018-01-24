@@ -14,5 +14,7 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: d-risk.tech
+  region: ap-southeast-1
+  skip_cleanup: true
   on:
     repo: d-risk/startbootstrap-landing-page
