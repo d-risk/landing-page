@@ -1,11 +1,19 @@
-sudo:          false
-language:      node_js
+sudo: false
+language: node_js
 node_js:
-  - "node"
-install:       npm install
+- node
+install: npm install
 script:
-  - npm test
-  - gulp
+- npm test
+- gulp
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: d-risk.tech
+  local-dir: css, img, vendor, index.html
+  on:
+    repo: d-risk/startbootstrap-landing-page
