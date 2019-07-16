@@ -27,14 +27,14 @@
     "url": "https://github.com/d-risk/landing-page.git"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
   },
   "devDependencies": {
-    "aws-sdk": "^2.186.0",
-    "browser-sync": "2.18.13",
+    "aws-sdk": "^2.493.0",
+    "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "minimatch": "^3.0.4"
   }
